@@ -1,13 +1,13 @@
-Object.o : Object.h Object.r 
-Point.o : Point.h Object.h Point.r Object.r 
-Circle.o : Circle.h Point.h Object.h Circle.r Point.r Object.r 
-List.o : List.h Object.h List.r Object.r 
-Queue.o : Queue.h List.h Object.h Queue.r List.r Object.r 
-Stack.o : Stack.h List.h Object.h Stack.r List.r Object.r 
-points.o : Point.h Object.h 
-circles.o : Circle.h Point.h Object.h 
-queues.o : Queue.h List.h Object.h 
-stacks.o : Stack.h List.h Object.h 
+Object.o: Object.c Object.h Object.r
+Point.o: Point.c Point.h Point.r Object.r
+Circle.o: Circle.c Circle.h Point.h Circle.r Point.r Object.r
+List.o: List.c List.h Object.h List.r Object.r
+Queue.o: Queue.c Queue.h List.h Object.h Queue.r List.r Object.r
+Stack.o: Stack.c Stack.h List.h Object.h Stack.r List.r Object.r
+points.o: points.c Point.h
+circles.o: circles.c Circle.h Point.h
+queues.o: queues.c Queue.h List.h Object.h
+stacks.o: stacks.c Stack.h List.h Object.h
 Point.d: Object.d
 Circle.d: Point.d
 List.d: Object.d

@@ -1,13 +1,13 @@
-Object.o : Object.h Object.r 
-List.o : List.h Object.h List.r Object.r 
-Exception.o : Exception.h Object.h Exception.r Object.r List.h 
-Node.o : Node.h Object.h Node.r Object.r parse.h Symbol.h 
-Symbol.o : Symbol.h Object.h Symbol.r Object.r parse.h Node.h 
-Symtab.o : Symtab.h Object.h Symtab.r Object.r binary.h Symbol.h \
-  Exception.h 
-except.o : Exception.h Object.h 
-binary.o : binary.h 
-parse.o : parse.h Exception.h Object.h Node.h Symbol.h Symtab.h 
+Object.o: Object.c Object.h Object.r
+List.o: List.c List.h Object.h List.r Object.r
+Exception.o: Exception.c Exception.h Object.h Exception.r Object.r List.h
+Node.o: Node.c Node.h Object.h Node.r Object.r parse.h Symbol.h
+Symbol.o: Symbol.c Symbol.h Object.h Symbol.r Object.r parse.h Node.h
+Symtab.o: Symtab.c Symtab.h Object.h Symtab.r Object.r binary.h Symbol.h \
+  Exception.h
+except.o: except.c Exception.h Object.h
+binary.o: binary.c binary.h
+parse.o: parse.c parse.h Exception.h Object.h Node.h Symbol.h Symtab.h
 List.d: Object.d
 Exception.d: Object.d
 Node.d: Object.d
