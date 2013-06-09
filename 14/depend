@@ -1,0 +1,18 @@
+Objct.o: Objct.c
+List.o: List.c
+Ic.o: Ic.c
+Crt.o: Crt.c
+Xt.o: Xt.c
+hello.o: hello.c Ic.h
+button.o: button.c Ic.h
+run.o: run.c Ic.h
+cbutton.o: cbutton.c Crt.h
+crun.o: crun.c Crt.h
+xhello.o: xhello.c Xt.h
+xbutton.o: xbutton.c Ic.h Xt.h
+xrun.o: xrun.c Ic.h Xt.h
+Object.c: Object.d
+List.c: List.d
+Ic.c: Ic.d
+Crt.c: Crt.d
+Xt.c: Xt.d
